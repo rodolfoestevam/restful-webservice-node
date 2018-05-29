@@ -3,7 +3,7 @@ var express = require('express');
 var routes = function (Book) {
     var bookRouter = express.Router();
 
-    bookRouter.route('/Books')
+    bookRouter.route('/')
         .post(function (req, res) {
             var book = new Book(req.body);
             book.save();

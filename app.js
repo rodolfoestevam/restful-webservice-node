@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 bookRouter = require('./Routes/bookRoutes')(Book);
 
-app.use('/api', bookRouter)
+app.use('/api/books', bookRouter)
 
 
 app.get('/', function (req, res) {
