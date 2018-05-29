@@ -10,7 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "mongoose": "^5.1.2"
+    "gulp-mocha": "^6.0.0",
+    "mongoose": "^5.1.2",
+    "should": "^13.2.1",
+    "sinon": "^5.0.10"
   },
   "devDependencies": {
     "body-parser": "^1.18.3",
