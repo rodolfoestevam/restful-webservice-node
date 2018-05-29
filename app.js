@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-bookRouter = require('./Routes/bookRoutes')();
+bookRouter = require('./Routes/bookRoutes')(Book);
 
 app.use('/api', bookRouter)
 
