@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema();
 
-var bookModel = new mongoose.Schema({
+var bookModelSchema = new mongoose.Schema({
     title: {
         type: String
     },
@@ -17,4 +17,4 @@ var bookModel = new mongoose.Schema({
     }
 });
 
-module.exports = mongoose.model('Book', bookModel);
+module.exports = mongoose.model('Book', bookModelSchema);
